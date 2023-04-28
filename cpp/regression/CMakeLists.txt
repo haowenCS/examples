@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 project(regression)
 set(CMAKE_CXX_STANDARD 14)
-
+set(CMAKE_PREFIX_PATH "/home/hw470/miniconda3/envs/torchpy38/lib/python3.8/site-packages/torch/share/cmake/Torch")
 find_package(Torch REQUIRED)
 
 add_executable(${PROJECT_NAME} "regression.cpp")
